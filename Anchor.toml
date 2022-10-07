@@ -1,0 +1,16 @@
+[features]
+seeds = false
+[programs.localnet]
+switchboard_vrf_flip = "DD4D97uKgAWZyY3PbAniHMGJyX6nrCBoL5CkJjxnnq48"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+# cluster = "localnet"
+# wallet = "../payer-keypair.json"
+cluster = "devnet"
+wallet = "/home/youngwarchief/.config/solana/id.json"
+
+[scripts]
+test = "npx mocha --extension ts --require ts-node/register -t 1000000 tests/**/*.test.ts"
